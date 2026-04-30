@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-29T21:45:57.809464",
+    "last_updated": "2026-04-30T07:37:35.063335",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.106"
@@ -98,10 +98,10 @@
     },
     {
       "metric": "race_taper",
-      "value": 10,
+      "value": 9,
       "severity": "info",
       "threshold": "RACE_A within 8-14 days",
-      "context": "RACE_A 'Noturna Maratona Mem Martins' in 10 days. Begin volume reduction (target 41-60% over 2 weeks). Maintain intensity. CTL should peak now or within the next few days.",
+      "context": "RACE_A 'Noturna Maratona Mem Martins' in 9 days. Begin volume reduction (target 41-60% over 2 weeks). Maintain intensity. CTL should peak now or within the next few days.",
       "persistence_days": null,
       "tier": 1
     }
@@ -113,13 +113,13 @@
       "hrv": {
         "status": "unavailable",
         "value": null,
-        "baseline_7d": 36.0,
+        "baseline_7d": null,
         "delta_pct": null
       },
       "rhr": {
         "status": "unavailable",
         "value": null,
-        "baseline_7d": 65.3,
+        "baseline_7d": 65,
         "delta_bpm": null
       },
       "sleep": {
@@ -138,7 +138,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 1.7
+        "value": 3.2
       }
     },
     "signal_summary": {
@@ -187,10 +187,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 15.29,
-      "atl": 13.55,
-      "tsb": 1.74,
-      "ramp_rate": -0.66,
+      "ctl": 14.93,
+      "atl": 11.74,
+      "tsb": 3.19,
+      "ramp_rate": -0.64,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -280,8 +280,8 @@
   "derived_metrics": {
     "recovery_index": null,
     "recovery_index_yesterday": null,
-    "hrv_baseline_7d": 36.0,
-    "rhr_baseline_7d": 65.3,
+    "hrv_baseline_7d": null,
+    "rhr_baseline_7d": 65,
     "hrv_baseline_28d": 36.0,
     "rhr_baseline_28d": 65.3,
     "latest_hrv": null,
@@ -403,12 +403,12 @@
       "power_curve_delta": {
         "window_days": 28,
         "current_window": {
-          "start": "2026-04-02",
-          "end": "2026-04-29"
+          "start": "2026-04-03",
+          "end": "2026-04-30"
         },
         "previous_window": {
-          "start": "2026-03-05",
-          "end": "2026-04-01"
+          "start": "2026-03-06",
+          "end": "2026-04-02"
         },
         "anchors": null,
         "rotation_index": null,
@@ -417,12 +417,12 @@
       "hr_curve_delta": {
         "window_days": 28,
         "current_window": {
-          "start": "2026-04-02",
-          "end": "2026-04-29"
+          "start": "2026-04-03",
+          "end": "2026-04-30"
         },
         "previous_window": {
-          "start": "2026-03-05",
-          "end": "2026-04-01"
+          "start": "2026-03-06",
+          "end": "2026-04-02"
         },
         "anchors": {
           "60s": {
@@ -452,11 +452,11 @@
       "sustainability_profile": {
         "window": {
           "days": 42,
-          "start": "2026-03-19",
-          "end": "2026-04-29"
+          "start": "2026-03-20",
+          "end": "2026-04-30"
         },
         "weight_kg": 72.4,
-        "weight_source": "wellness_recent",
+        "weight_source": "wellness_extended",
         "cycling": {
           "anchors": null,
           "coverage_ratio": 0.0,
@@ -490,7 +490,7 @@
           "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 0,
-          "race_proximity": 10,
+          "race_proximity": 9,
           "next_week_load": null,
           "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 0.2
@@ -528,10 +528,10 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-29T21:45:57.808688",
+    "calculation_timestamp": "2026-04-30T07:37:35.062768",
     "data_quality": {
-      "hrv_data_points": 1,
-      "rhr_data_points": 6,
+      "hrv_data_points": 0,
+      "rhr_data_points": 5,
       "activities_7d": 3,
       "activities_28d": 15,
       "planned_workouts_7d": 0,
@@ -1302,45 +1302,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-04-23",
-      "weight_kg": 72.4,
-      "resting_hr": 67,
-      "hrv_rmssd": 36.0,
-      "hrv_sdnn": 54.0,
-      "sleep_hours": 7.9,
-      "sleep_formatted": "7h54m",
-      "sleep_quality": 3,
-      "sleep_score": 5.0,
-      "mental_energy": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null,
-      "fatigue": 1,
-      "soreness": 1,
-      "stress": 3,
-      "mood": 3,
-      "motivation": 4,
-      "injury": 2,
-      "hydration": 3,
-      "spO2": 97.8,
-      "blood_glucose": null,
-      "systolic": null,
-      "diastolic": null,
-      "baevsky_si": null,
-      "lactate": null,
-      "respiration": null,
-      "body_fat_pct": null,
-      "abdomen_cm": null,
-      "steps": 1001,
-      "hydration_volume_l": null,
-      "kcal_consumed": null,
-      "carbohydrates_g": null,
-      "protein_g": null,
-      "fat_g": null,
-      "menstrual_phase": null,
-      "menstrual_phase_predicted": null,
-      "readiness": 7.1
-    },
-    {
       "date": "2026-04-24",
       "weight_kg": null,
       "resting_hr": 71,
@@ -1573,6 +1534,45 @@
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
+    },
+    {
+      "date": "2026-04-30",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null,
+      "fatigue": null,
+      "soreness": null,
+      "stress": null,
+      "mood": null,
+      "motivation": null,
+      "injury": null,
+      "hydration": null,
+      "spO2": null,
+      "blood_glucose": null,
+      "systolic": null,
+      "diastolic": null,
+      "baevsky_si": null,
+      "lactate": null,
+      "respiration": null,
+      "body_fat_pct": null,
+      "abdomen_cm": null,
+      "steps": null,
+      "hydration_volume_l": null,
+      "kcal_consumed": null,
+      "carbohydrates_g": null,
+      "protein_g": null,
+      "fat_g": null,
+      "menstrual_phase": null,
+      "menstrual_phase_predicted": null,
+      "readiness": null
     }
   ],
   "planned_workouts": [
@@ -1603,8 +1603,8 @@
     "total_training_formatted": "2h2m",
     "total_tss": 81,
     "activities_count": 3,
-    "avg_hrv": 36.0,
-    "avg_resting_hr": 65.3
+    "avg_hrv": null,
+    "avg_resting_hr": 65.0
   },
   "race_calendar": {
     "next_race": {
@@ -1612,7 +1612,7 @@
       "date": "2026-05-09",
       "category": "RACE_A",
       "type": "Run",
-      "days_until": 10,
+      "days_until": 9,
       "moving_time_seconds": null,
       "distance_meters": 42000.0,
       "has_terrain": false
@@ -1623,7 +1623,7 @@
         "date": "2026-05-09",
         "category": "RACE_A",
         "type": "Run",
-        "days_until": 10,
+        "days_until": 9,
         "moving_time_seconds": null,
         "distance_meters": 42000.0,
         "has_terrain": false
@@ -1633,8 +1633,8 @@
       "active": true,
       "event_name": "Noturna Maratona Mem Martins",
       "event_date": "2026-05-09",
-      "days_until": 10,
-      "message": "RACE_A 'Noturna Maratona Mem Martins' in 10 days. Begin volume reduction (target 41-60% over 2 weeks). Maintain intensity. CTL should peak now or within the next few days."
+      "days_until": 9,
+      "message": "RACE_A 'Noturna Maratona Mem Martins' in 9 days. Begin volume reduction (target 41-60% over 2 weeks). Maintain intensity. CTL should peak now or within the next few days."
     },
     "race_week": {
       "active": false
