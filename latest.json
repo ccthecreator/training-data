@@ -62,15 +62,15 @@
       "menstrual": "menstrual_phase and menstrual_phase_predicted are not on the 1-4 scale. Values: PERIOD, FOLLICULAR, OVULATION, LUTEAL, etc."
     },
     "quick_stats": {
-      "total_training_hours": 3.1,
-      "total_training_formatted": "3h6m",
-      "total_activities": 5,
-      "total_tss": 148
+      "total_training_hours": 3.8,
+      "total_training_formatted": "3h48m",
+      "total_activities": 6,
+      "total_tss": 163
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-18T05:18:59.385155",
+    "last_updated": "2026-06-18T09:55:26.821533",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.106"
@@ -88,8 +88,8 @@
   "athlete_notes": null,
   "alerts": [],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "unavailable",
@@ -100,17 +100,17 @@
       "rhr": {
         "status": "unavailable",
         "value": null,
-        "baseline_7d": 56.6,
+        "baseline_7d": 57.8,
         "delta_bpm": null
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
+        "status": "red",
+        "hours": 3.92,
         "quality": null
       },
       "acwr": {
         "status": "green",
-        "value": 0.87
+        "value": 0.93
       },
       "ri": {
         "status": "unavailable",
@@ -119,14 +119,14 @@
       },
       "tsb": {
         "status": "green",
-        "value": -1.8
+        "value": -3.4
       }
     },
     "signal_summary": {
       "green": 2,
       "amber": 0,
-      "red": 0,
-      "unavailable": 4
+      "red": 1,
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Base",
@@ -135,8 +135,17 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "modification": {
+      "triggers": [
+        "sleep"
+      ],
+      "suggested_adjustments": {
+        "intensity": "preserve",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 red (sleep), 0 amber ().",
     "alarm_refs": []
   },
   "history": {
@@ -149,9 +158,15 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 3.1,
-    "total_activities": 5,
+    "total_duration_decimal_hours": 3.8,
+    "total_activities": 6,
     "by_activity_type": {
+      "OpenWaterSwim": {
+        "duration_decimal_hours": 0.7,
+        "count": 1,
+        "tss": 15,
+        "distance_km": 1.5
+      },
       "Run": {
         "duration_decimal_hours": 2.27,
         "count": 3,
@@ -174,10 +189,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 25.0,
-      "atl": 26.75,
-      "tsb": -1.75,
-      "ramp_rate": 0.48,
+      "ctl": 25.36,
+      "atl": 28.74,
+      "tsb": -3.38,
+      "ramp_rate": 0.84,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -231,11 +246,11 @@
     },
     "current_metrics": {
       "weight_kg": 67.55,
-      "resting_hr": 57,
+      "resting_hr": 64,
       "hrv": null,
       "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "sleep_hours": 3.92,
+      "sleep_formatted": "3h55m",
       "sleep_score": null,
       "fatigue": null,
       "soreness": null,
@@ -268,48 +283,48 @@
     "recovery_index": null,
     "recovery_index_yesterday": null,
     "hrv_baseline_7d": null,
-    "rhr_baseline_7d": 56.6,
+    "rhr_baseline_7d": 57.8,
     "hrv_baseline_28d": null,
     "rhr_baseline_28d": 63.5,
     "latest_hrv": null,
     "latest_rhr": null,
-    "acwr": 0.87,
+    "acwr": 0.93,
     "acwr_interpretation": "optimal",
-    "monotony": 0.76,
-    "monotony_interpretation": "normal (primary sport 0.72, total 0.76 inflated by multi-sport)",
+    "monotony": 0.89,
+    "monotony_interpretation": "normal (primary sport 0.72, total 0.89 inflated by multi-sport)",
     "primary_sport": "run",
     "primary_sport_monotony": 0.72,
     "primary_sport_tss_7d": 143.0,
     "effective_monotony": 0.72,
     "multi_sport_detected": true,
-    "strain": 112.0,
-    "stress_tolerance": 1.5,
+    "strain": 145.0,
+    "stress_tolerance": 1.6,
     "load_recovery_ratio": null,
-    "tss_7d_total": 148.0,
-    "tss_28d_total": 684.0,
+    "tss_7d_total": 163.0,
+    "tss_28d_total": 699.0,
     "zone_distribution_7d": {
-      "z1_hours": 1.59,
+      "z1_hours": 2.16,
       "z2_hours": 0.35,
       "z3_hours": 0.74,
       "z4_plus_hours": 0.42,
-      "total_hours": 3.11,
+      "total_hours": 3.68,
       "zone_basis": "hr"
     },
-    "grey_zone_percentage": 24.0,
+    "grey_zone_percentage": 20.3,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 13.5,
+    "quality_intensity_percentage": 11.4,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "easy_time_ratio": 0.63,
+    "easy_time_ratio": 0.68,
     "easy_time_ratio_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
     "hard_days_this_week": 0,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 6993,
+      "z1_seconds": 9047,
       "z2_seconds": 2682,
       "z3_seconds": 1509,
-      "z1_pct": 62.5,
-      "z2_pct": 24.0,
-      "z3_pct": 13.5,
+      "z1_pct": 68.3,
+      "z2_pct": 20.3,
+      "z3_pct": 11.4,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "hr"
@@ -327,12 +342,12 @@
       "sport": "run"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 45169,
+      "z1_seconds": 47223,
       "z2_seconds": 8587,
       "z3_seconds": 4452,
-      "z1_pct": 77.6,
-      "z2_pct": 14.8,
-      "z3_pct": 7.6,
+      "z1_pct": 78.4,
+      "z2_pct": 14.2,
+      "z3_pct": 7.4,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "hr"
@@ -515,12 +530,12 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-18T05:18:59.384211",
+    "calculation_timestamp": "2026-06-18T09:55:26.820604",
     "data_quality": {
       "hrv_data_points": 0,
-      "rhr_data_points": 5,
-      "activities_7d": 5,
-      "activities_28d": 24,
+      "rhr_data_points": 6,
+      "activities_7d": 6,
+      "activities_28d": 25,
       "planned_workouts_7d": 0,
       "ftp_history_days": {
         "indoor": 0,
@@ -529,6 +544,57 @@
     }
   },
   "recent_activities": [
+    {
+      "id": "i158293328",
+      "date": "2026-06-18T09:17:51",
+      "type": "OpenWaterSwim",
+      "name": "Swim",
+      "duration_hours": 0.7,
+      "distance_km": 1.53,
+      "tss": 15,
+      "intensity_factor": 45.80286,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 129,
+      "max_hr": 148,
+      "avg_cadence": null,
+      "avg_speed": 2.4,
+      "avg_speed_unit": "KPH",
+      "max_speed": 9.0,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": 20.475622,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": 2.8689706,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 376,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": 87.0,
+      "feel": null,
+      "rpe": 4,
+      "effort_response": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 2054,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": false,
+      "has_dfa": false
+    },
     {
       "id": "i157823224",
       "date": "2026-06-16T15:06:06",
@@ -1925,9 +1991,9 @@
     {
       "date": "2026-06-17",
       "weight_kg": null,
-      "resting_hr": null,
+      "resting_hr": 64,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
+      "hrv_sdnn": 74.0,
       "sleep_hours": null,
       "sleep_formatted": null,
       "sleep_quality": null,
@@ -1942,7 +2008,7 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 96.3,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -1951,7 +2017,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 2619,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -1967,12 +2033,12 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "sleep_hours": 3.92,
+      "sleep_formatted": "3h55m",
       "sleep_quality": null,
       "sleep_score": null,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 56.0,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -2011,12 +2077,12 @@
     "bail_no_match": 0
   },
   "weekly_summary": {
-    "total_training_hours": 3.1,
-    "total_training_formatted": "3h6m",
-    "total_tss": 148,
-    "activities_count": 5,
+    "total_training_hours": 3.8,
+    "total_training_formatted": "3h48m",
+    "total_tss": 163,
+    "activities_count": 6,
     "avg_hrv": null,
-    "avg_resting_hr": 56.6
+    "avg_resting_hr": 57.8
   },
   "race_calendar": {
     "next_race": null,
