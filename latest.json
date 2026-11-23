@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-23T00:20:36.451676",
+    "last_updated": "2026-11-23T08:01:05.330425",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.106"
@@ -141,10 +141,10 @@
   },
   "history": {
     "available": true,
-    "last_generated": "2026-10-04",
-    "age_days": 50,
-    "total_months": 11,
-    "history_confidence": "medium"
+    "last_generated": "2026-11-23",
+    "age_days": 0,
+    "total_months": 12,
+    "history_confidence": "high"
   },
   "summary": {
     "period_description": "Last 7 days of training (including today)",
@@ -399,7 +399,7 @@
       ],
       "basis": {
         "stream_1": {
-          "ctl_slope": null,
+          "ctl_slope": -0.65,
           "acwr_trend": null,
           "hard_day_pattern": 0,
           "weeks_available": 4
@@ -447,7 +447,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-23T00:20:36.450861",
+    "calculation_timestamp": "2026-11-23T08:01:05.329550",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
